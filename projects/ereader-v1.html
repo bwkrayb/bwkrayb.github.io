@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link rel="stylesheet" href="css/styles.css"> 
+   <meta charset="UTF-8">
+   <title>Brandon Does Stuff</title>
+  </head>
+  <body>
+   <h1>The eReader (v1)</h1>
+   <h5>August 27, 2023</h5>
+   <br>
+   <p>TLDR: I made an ereader.</p>
+   <p>The longer version... Yes, I made an ereader. Am I using "made" loosley? Kind of. But at the same time I know I'm being overly humble. I have searched all over the internet and as far as i can tell im the only person who went far enough to have epub support in their ereader project. Every project ive found seems to hover around the ability to read txt ebook files that you can get from project gutenburg. </p>
+   <br>
+   <p>Now I'm not claiming I did this alone. A lot of the functionality comes from ebooklib, another open source project that helps with decompressing the epub files. (epub files are seriously just zipped up xml/html files! That was unexpected.) Using python, I feed an epub file into the ebooklib API, then from there I split the file into pages with math based on the size of the eInk screen being used. From there its written to the display with EPD drivers provided by waveshare.</p>
+   <h6>Its slow, its clunky, its tiny, BUT IT WORKS.</h6>
+   <p>Its inconvenient to use and thats why I enjoy it so much. Why did I do this? Well, I'm not entirely sure. I mean, I like reading. I read somehwat often too. I guess this really started as I watched foldable/dual screen devices come out. I wanted to build a dual screen folding ereader. Did I build one? ...no. But this is v1. As of this writing, there is even a v2! I'd even argue I already have a v3... but its a jumbled mess of 3d printed garbage. But thats a story for another post. Unless you are reading this like 3 years from now when I've hypothetically been able to complete 3 articles on this github blog. But enough rambling, I guess I'll tell you about the hardware. </p>
+   <ul><h6>Parts and Hardware!</h6>
+	   <li>Raspberry Pi</li>
+	   <ul>
+		   <li>This can be any pi you want. It just needs headers soldered on. Since python runs single threaded, the faster the pi the better.</li>
+	   </ul>
+	   <li>Waveshare 2.7" eInk display</li>
+   </ul>
+   <p>The project revolves around a raspberry pi, an eink display from waveshare, and buttons! </p> 
+  </body>
+</html>
